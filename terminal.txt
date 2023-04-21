@@ -5,3 +5,12 @@
 origin	https://github.com/mgallon235/master_repo.git (fetch)
 origin	https://github.com/mgallon235/master_repo.git (push)
 
+
+
+Environment management
+
+1. $conda env list ---> shows all the virtual environments available
+2. $conda activate <env name> ----> activates environment
+3. $conda deactivate -----> deactivates the current environment	
+4. $conda list ----> shows the packages in the current environment
+
