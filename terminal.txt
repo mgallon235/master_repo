@@ -1,0 +1,7 @@
+## Interesting Commands
+1. $git remote -v ---> this will show where the repository pulls and fetch
+
+(base) mikels-MacBook-Pro:master_repo mikelgallo$ git remote -v
+origin	https://github.com/mgallon235/master_repo.git (fetch)
+origin	https://github.com/mgallon235/master_repo.git (push)
+
