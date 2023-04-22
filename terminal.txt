@@ -16,3 +16,18 @@ Environment management
 
 
 Installing Packages *
+
+1. pip
+2. pip3
+3. conda
+4. ?
+
+
+Installing PostgreSQL@14 and pgAdmin in Macos using Brewbrew 
+1. brew install postgresql@14
+2. brew reinstall postgresql@14
+3. brew install --cask pgadmin4
+
+
+How to import csv to pgAdmin4 in PostgreSQL
+URL: https://shorturl.at/dnxA6
