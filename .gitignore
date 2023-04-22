@@ -161,3 +161,7 @@ cython_debug/
 
 # Credentials
 account_credentials.json
+query_credentials.json
+
+# Other
+.DS_Store
