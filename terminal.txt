@@ -14,3 +14,5 @@ Environment management
 3. $conda deactivate -----> deactivates the current environment	
 4. $conda list ----> shows the packages in the current environment
 
+
+Installing Packages *
