@@ -1,0 +1,6 @@
+Things to do:
+1. Automate the importing of csv files to the database:
+    a. Create a directory where the new csv files are going to be temporarily stored.
+    b. Create a script that moves the already imported csvs to another folder.
+    c. Cleaning script.
+    d. Creating a table in the database based on csv data (query).
