@@ -7,7 +7,9 @@ import json
 with open('query_credentials.json') as f:
    parms = json.load(f)
 
-con = psycopg2.connect(database= parms['database'],user= parms['user'],password=parms['password'],host=parms['host'],port= parms['port'])
+con = psycopg2.connect(database= parms['database'],user= parms['user'],
+                       password=parms['password'],host=parms['host'],port= parms['port'])
+
 sql = "SELECT * FROM public.sales_table;"
 dat = sqlio.read_sql_query(sql, con)
 
@@ -26,3 +28,21 @@ con.close()
 
 ## When the output is 1 means that the connection is closed
 print(con.closed)
+
+
+
+
+
+
+########## Creating a cursor object to excecute changes in the database:
+
+cur = con.cursor()  
+
+## Running query
+cur.execute("SELECT purchase_amount FROM public.sales_table where dates <= '2009-07-01';") 
+## this is saved in a list
+res = cur.fetchall()
+type(res)
+
+cur.close()
+cur.closed

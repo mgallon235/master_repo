@@ -4,3 +4,16 @@ Things to do:
     b. Create a script that moves the already imported csvs to another folder.
     c. Cleaning script.
     d. Creating a table in the database based on csv data (query).
+
+
+Using Terminal to connect to Database and create a new database:
+1. Connecting to database:
+    a. sudo -u postgres psql
+    b. enter your computer password
+    c. enter password for user postgres
+2. View current databases:
+    a. \l 
+3. Create a new database:
+    a. CREATE DATABASE <name>;
+4. Quit postgres server:
+    a. \q
