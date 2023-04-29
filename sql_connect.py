@@ -31,9 +31,6 @@ print(con.closed)
 
 
 
-
-
-
 ########## Creating a cursor object to excecute changes in the database:
 
 cur = con.cursor()  
