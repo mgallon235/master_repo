@@ -67,3 +67,6 @@ probs = counts/float(counts.sum())
 print probs.sum() # 1.0
 plt.bar(bins, probs, 1.0/num_bins)
 plt.show()
+
+conn.closed
+conn.close()
