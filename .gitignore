@@ -165,3 +165,6 @@ query_credentials.json
 
 # Other
 .DS_Store
+
+#Other stuff
+chores.py
