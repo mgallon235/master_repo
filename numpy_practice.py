@@ -60,10 +60,90 @@ print(identity_arr)
 
 # Generating random arrays using numpy
 
-# Random.rand() - creates random array with uniform (between 0 and 1) distribution, also creates a 2-dimensional 
+# random.rand() - creates random array with uniform (between 0 and 1) distribution, also creates a 2-dimensional 
 # we need to specify the row and column
 uniform_random = np.random.rand(4,5)
 
 # We can use a  for loop to print the 2-dimensional array:
 for i in uniform_random:
     print(i)
+
+# random.randn() - creates random array with normal distribution, also creates a 2-dimensional. we need tospecify n and m
+normal_arr = np.random.randn(4,5)
+
+# print using a for loop:
+for i in normal_arr:
+    print(i)
+
+# random.randint()  -  creates random array  using random integers between a certain range. 3 parametes:
+# lower-bound
+# upper-bound 
+# number of random integers to generate
+integer_rand = np.random.randint(30,45,10)
+
+print(integer_rand)
+
+for i in integer_rand:
+    print(i)
+
+## How to  know how many dimensions your array has:
+integer_rand.ndim # 1 dim (vector)
+normal_arr.ndim # 2 dim (matrix)
+# Show the shape - in case of 1   dimensional will tell you the number of  observations - for a 2-dim the row  x cols
+integer_rand.shape
+normal_arr.shape
+
+# To  create a matrix from the random.randint() - we need to specify the num rows and columns (size) instead of numb of observations
+int_matrix = np.random.randint(30,45, size =(3,3))
+print(int_matrix)
+
+for i in int_matrix:
+    print(i)
+
+# What happens if we want to print each value within all vectors as 
+for rows in  int_matrix:
+    for columns in rows:
+        print(columns)
+
+'''----------------------------------------------'''
+
+## Adding items in a Numpy array
+
+#  You can use the append() method. the append() method returns a new array that contains newly added items appended  at the 
+# end of the original array
+
+array_test = np.random.randint(1,10, 5)
+
+print(array_test)
+
+# Now lets add a new value to our array_test:
+
+extented_arr = np.append(array_test,[0,0,1,0,0])
+print(extented_arr)
+
+
+'''-------------------------'''
+
+## Add items in a 2-dimensional Numpy array. You need to specify whether you want to add the new item 
+# as a row or as a column. To do so , you can take the help of the axis attribute of the append method.
+
+# Lets first create a 3x3 matrix of all zeros
+test_zero = np.zeros((3,3))
+
+print(test_zero)
+
+# A. Add a new  row to 3x3 matrix
+### You need to pass the original array in the form of a row vector and the  axis attribute to the append().
+### To add the 
+row_s = [0,0,105] # in order to be able to add this list we need to put inside another set of square brackets (2-dimension)
+extended_zero = np.append(test_zero,[row_s], axis = 0)
+
+print(extended_zero)
+
+# B. Add a new column
+extended_zero_c = np.append(extended_zero,[[1],[0],[0],[0]], axis = 1)
+
+for i in extended_zero_c:
+    print(i)
+
+print(extended_zero_c.shape)
