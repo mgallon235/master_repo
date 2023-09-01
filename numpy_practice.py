@@ -147,3 +147,47 @@ for i in extended_zero_c:
     print(i)
 
 print(extended_zero_c.shape)
+
+'''-----------------------------------------'''
+
+# do some inner product with matrices/ (vectors)
+
+xs= np.array([[1],[0],[-1]])
+ys = np.array([[3],[2],[0]])
+
+# first multiplication
+
+xsys = np.dot(np.transpose(xs),ys)
+
+xsys
+
+'''------------------------------------------'''
+
+# Calculating the norm of a vector
+
+xn = np.array([[1],[0],[-1]])
+xn_norm = np.linalg.norm(xn)
+
+xn_norm
+
+'''------------------------------------------'''
+
+W = np.array([[1,2,3],[4,5,6],[7,8,9]])
+print(W)
+
+xe= np.array([[2],[-1],[1]])
+
+z = np.dot(xe.T,np.dot(W,xe))
+
+z
+
+
+'''----------------------------------------'''
+
+# Python code to compute the matrix inverse
+
+xn = np.array([[1,3],[-2,7],[0,1]])
+xtx = np.dot(xn.T,xn)
+xtxinv = np.linalg.inv(xtx)
+
+print(xtxinv)

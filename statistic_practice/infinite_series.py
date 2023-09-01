@@ -17,6 +17,7 @@ k = 2 # 2 successes
 
 comb(n2,k) ## Final Result
 factorial(k)
-factorial(8)
+factorial(4)
 
 (3628800.0)/(2* 40320.0)
+comb(5,1) 
