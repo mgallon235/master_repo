@@ -191,3 +191,68 @@ xtx = np.dot(xn.T,xn)
 xtxinv = np.linalg.inv(xtx)
 
 print(xtxinv)
+
+'''-----------------------------------------'''
+
+# Solving linear equation  xB = y
+
+xn = np.array([[1,3],[-2,7],[0,1]])
+ye = np.array([[2],[1],[0]])
+
+beta= np.linalg.lstsq(xn,ye, rcond=None)[0]
+
+print(beta)
+
+
+'''------------------------------------------'''
+xd = np.array([2,3,4,5,6,7,8,9,10,11,12])
+nd = np.array([1,2,3,4,5,6,5,4,3,2,1])
+md = nd*(1/36)
+
+print(md)
+
+rresult = xd * md
+
+u = 0
+for i in rresult:
+    u = u+i
+print(u)
+
+'''----------------------------''' #Homework exercise 1
+import pandas as pd
+ds = {'X':[2,3,4,5,6,7,8,9,10,11,12], 'P':[1,2,3,4,5,6,5,4,3,2,1]}
+
+dataset= pd.DataFrame(ds)
+
+print(dataset)
+
+dataset['prob'] = dataset['P']*1/36
+
+print(dataset['prob'].sum())
+
+dataset['Ex'] = dataset['X']*dataset['prob']
+
+dataset['Ex'].sum()
+
+'''-----------------------''' #lets add the variance
+
+dataset['X^2'] = dataset['X']**2
+dataset_2 =dataset.rename(columns={"Ex": "X*P"})
+
+dataset_2['EX'] =dataset_2['X*P'].sum()
+
+dataset_2['X^2*P'] = dataset_2['X^2'] * dataset_2['prob']
+
+'''---------------------'''
+dataset_2['x-u'] = (dataset_2['X']- dataset_2['EX'])**2  #Best method
+varxx = (dataset_2['x-u']*dataset_2['prob']).sum()
+varxx
+'''---------------------'''
+Ex2 = dataset_2['X^2*P'].sum()
+Ex2
+
+expect_sqr = (dataset_2['X*P'].sum())**2
+expect_sqr
+
+Varx = Ex2 - expect_sqr
+Varx
