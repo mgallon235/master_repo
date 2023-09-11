@@ -21,6 +21,8 @@ print(carac)
 full = a + b + c
 print(full)
 
+print(full.split())
+
 # How many I appear in c ? 
 values = c.count('I')
 values
@@ -42,11 +44,13 @@ hh = set(full)
 
 print(len(hh))
 
+# lower first
 full_l = full.lower()
 
 print(full_l)
 
 print(len(set(full_l)))
+
 
 n_full = full_l.replace(',','')
 
