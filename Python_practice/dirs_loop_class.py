@@ -131,3 +131,121 @@ instance1.greet(False)
 
 
 
+#### Practice
+
+#%%
+from datetime import date, timedelta
+
+day_before=0
+if day_before == 0:
+    my_date=date.today() - timedelta(days=day_before+1) #timedelta helps in calculating the difference between two dates
+elif day_before > 0:
+    my_date=date.today() - timedelta(days=day_before - (day_before-1)) #timedelta helps in calculating the difference between two dates
+else:
+    my_date=date.today() # Anything lower than 0 will return current date
+
+#%%
+print(date.today())
+print(timedelta(days=day_before - (day_before-1)))
+print(my_date)
+print(day_before)
+
+my_date=str(date.today()-timedelta(days=day_before+1))
+print(my_date)
+
+#%%
+
+my_currencies=[]
+#my_date=str(date.today()-timedelta(days=day_before+1))
+'''We can reuse the variable my_date that we calculated on the previous ifelse statement'''
+my_date  = str(my_date)
+
+print(type(my_date))
+
+print(date.today()-timedelta(days=day_before - (day_before-1)))
+
+
+#%%
+
+# Given exchange rates with decimals
+usd_to_jpy = 110.0
+print(type(usd_to_jpy))
+usd_to_eur = 0.854
+type(usd_to_eur)
+amount_in_usd = float(input('How much money do you have in USD?'))
+type(amount_in_usd)
+# Conversion to JPY
+amount_in_jpy = amount_in_usd * usd_to_jpy
+amount_in_jpy
+
+
+#%%
+# Conversion back to USD using EUR exchange rate
+'''Calculate amount in euros from JPY amount'''
+amount_in_eur = amount_in_jpy * (1 / usd_to_eur)
+amount_in_eur = amount_in_jpy * (1 / usd_to_jpy) * usd_to_eur
+
+print(amount_in_eur)
+
+
+
+
+#%%
+
+
+A=[[7,1,3],[5,6,4],[1,9,3]]
+
+
+
+rows=[[i[0] for i in A],[i[1] for i in A],[i[2] for i in A]]
+
+det=0
+for index, row in enumerate(rows) :
+    nums=[0,1,2]
+    nums.pop(XXX)
+    minor=[]   
+    myrows=[]
+    for j in nums:
+        myrows.append(XXX)
+    for i in myrows:
+        minor.append(XXX)
+    det+=((-1)**XXX)*(XXX*XXX-XXX*XXX)
+
+print(det)
+
+
+#%%
+
+det=0
+for index, row in enumerate(rows) :
+    #print(index,  row)
+    nums=[0,1,2]
+    nums.pop(index)
+    #print(nums)
+    minor = []
+    myrows = []
+    for j in nums:
+        print(j)
+        myrows.append(j)
+    print(myrows)
+    for i in myrows:
+        minor.append(row)
+        print(minor)
+        print((-1)**(i))*(rows[i][j]*rows[j][i]-rows[0][j]* rows[j][0])
+    det+=((-1)**(i))*(rows[i][j]*rows[j][i]-rows[0][j]* rows[j][0])
+#print(nums)
+
+
+
+#%%
+print(myrows)
+
+print(minor)
+
+print(myrows)
+
+minor[i][0]
+rows[0][i]
+
+minor[j][0]
+rows[0][j]
