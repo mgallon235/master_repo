@@ -215,37 +215,18 @@ print(det)
 
 
 #%%
-
 det=0
 for index, row in enumerate(rows) :
-    #print(index,  row)
+    #print(index,row)
     nums=[0,1,2]
     nums.pop(index)
-    #print(nums)
-    minor = []
-    myrows = []
-    for j in nums:
-        print(j)
-        myrows.append(j)
-    print(myrows)
+    minor=[]   
+    myrows=[]
+    for  j  in  nums:
+        myrows.append(rows[j])
     for i in myrows:
-        minor.append(row)
-        print(minor)
-        print((-1)**(i))*(rows[i][j]*rows[j][i]-rows[0][j]* rows[j][0])
-    det+=((-1)**(i))*(rows[i][j]*rows[j][i]-rows[0][j]* rows[j][0])
-#print(nums)
+        minor.append(i[1])
+        minor.append(i[2])
+    det+=((-1)**(index))*row[0]*(minor[0]*minor[3]-minor[2]*minor[1])
 
-
-
-#%%
-print(myrows)
-
-print(minor)
-
-print(myrows)
-
-minor[i][0]
-rows[0][i]
-
-minor[j][0]
-rows[0][j]
+print(det)
