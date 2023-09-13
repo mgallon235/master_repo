@@ -1,0 +1,22 @@
+Ortiz,Alvaro	10
+Bennett,Andrew	6
+Di Gianvito,Angelo	9
+Michelangelo,Arianna	7
+Vélez,Daniela	10
+Monbiot,Edward	7
+Mirabent Rubinat,Guillem	9
+Ossa,Joaquin	8
+González,Julia	8
+Alvarez Poli,Luis Francisco	8
+Atazona,Luke	8
+Sargsyan,Mariam	10
+Breier,Mathieu	7
+Boudier,Maëlys	5
+Gallo,Mikel	10
+Beltrán,Natalia	7
+Gatland,Oliver	10
+Maciel,Rui	10
+Boxho,Sebastien	6
+Bakwenye,Tatiana	6
+Kromm,Vanessa	7
+Yuzkiv,Viktoriia	9
