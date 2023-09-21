@@ -1,4 +1,4 @@
-Ortiz,Alvaro	5
+Ortiz,Alvaro	7
 Bennett,Andrew	10
 Di Gianvito,Angelo	8
 Michelangelo,Arianna	10
@@ -7,12 +7,12 @@ Monbiot,Edward	8
 Mirabent Rubinat,Guillem	9
 Ossa,Joaquin	9
 González,Julia	7
-Alvarez Poli,Luis Francisco	7
+Alvarez Poli,Luis Francisco	8
 Atazona,Luke	6
 Sargsyan,Mariam	5
 Breier,Mathieu	5
 Boudier,Maëlys	7
-Gallo,Mikel	6
+Gallo,Mikel	7
 Beltrán,Natalia	9
 Gatland,Oliver	8
 Maciel,Rui	9

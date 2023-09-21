@@ -7,12 +7,12 @@ Monbiot,Edward	8
 Mirabent Rubinat,Guillem	5
 Ossa,Joaquin	10
 González,Julia	10
-Alvarez Poli,Luis Francisco	6
+Alvarez Poli,Luis Francisco	7
 Atazona,Luke	6
 Sargsyan,Mariam	9
 Breier,Mathieu	7
 Boudier,Maëlys	7
-Gallo,Mikel	6
+Gallo,Mikel	7
 Beltrán,Natalia	8
 Gatland,Oliver	9
 Maciel,Rui	9

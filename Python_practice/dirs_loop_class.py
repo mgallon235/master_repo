@@ -230,3 +230,31 @@ for index, row in enumerate(rows) :
     det+=((-1)**(index))*row[0]*(minor[0]*minor[3]-minor[2]*minor[1])
 
 print(det)
+
+
+
+#%%
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Define the constant n
+n = 2  # You can change this value as needed
+
+# Create an array of 𝜃 values
+theta = np.linspace(-10, 10, 100)  # Adjust the range as needed
+
+# Calculate the derivative for each 𝜃 value
+derivative = -n * theta
+
+# Create the plot
+plt.plot(theta, derivative, label="dln𝐿(𝜃|𝐱)/d𝜃 = -n𝜃")
+plt.xlabel("𝜃")
+plt.ylabel("dln𝐿(𝜃|𝐱)/d𝜃")
+plt.title("Derivative of Log Likelihood with respect to 𝜃")
+plt.axhline(0, color="red", linestyle="--", label="Zero Line")
+plt.legend()
+plt.grid(True)
+
+# Show the plot
+plt.show()
