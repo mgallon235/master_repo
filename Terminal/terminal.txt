@@ -13,6 +13,7 @@ Environment management
 2. $conda activate <env name> ----> activates environment
 3. $conda deactivate -----> deactivates the current environment	
 4. $conda list ----> shows the packages in the current environment
+5. $conda create --name myenv python=3.7
 
 
 Installing Packages *
