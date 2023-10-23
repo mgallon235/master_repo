@@ -23,6 +23,12 @@ Installing Packages *
 3. conda
 4. ?
 
+PSQL Data Base:
+$psql postgres://user@localhost:5432/user ---> to activate the database
+$psql --> (only if set up in default port)
+$\q ---> to quit the psql data base
+$\conninfo ---> info from database
+
 
 Installing PostgreSQL@14 and pgAdmin in Macos using Brewbrew 
 1. brew install postgresql@14
